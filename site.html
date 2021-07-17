@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RPSGOI</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <!---we had linked our css file----->
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="first.js"></script>
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div class="logo">
+                <a href='rpsgoi.jpeg'>RPSGOI</a>
+            </div>
+            <nav>
+                
+                <ul id='MenuItems'>
+                   <li><a href='#'>files</a></li>
+                   <li><a href='adminlogin.html'>ADMIN LOGIN</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'
+                        " style="width:auto;">STUDENT LOGIN</button></li>
+                    <h6></h6>
+                                              
+                </ul>
+            </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+                    <button type='submit'class='submit-btn'>login</button>
+
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='First Name' required>
+		     <input type='text'class='input-field'placeholder='Last Name ' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+                    
+	         </form>
+            </div>
+        </div>
+        <div class="mainDiv" >
+            <p id="about"><a href="pro.html">about creater</a></p><br><br>
+            
+        
+            <a href="https://www.facebook.com/mony.duddy/" >
+            <i class="fab fa-facebook fa-2x"> </i>
+            </a>
+              
+           <a href="https://www.instagram.com/aa_arzoo/" >
+           <i class="fab fa-instagram fa-2x"> </i>
+           </a>
+              
+            <a href="https://www.linkedin.com/in/arzoo-duddy-b591281a3/" >
+            <i class="fab fa-linkedin fa-2x"> </i>
+            </a>
+            
+            <br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br>
+            <h3>@:technical arzoo 2021 <br>all rights reserverd<br>designed by Arzoo duddy</h3>
+              
+              
+              </div>
+        </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+	
+</body>
+</html>

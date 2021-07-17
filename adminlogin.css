@@ -1,0 +1,59 @@
+body {
+
+    height:490px;
+    background-color:rgb(24, 23, 23);
+ }
+ #special{
+     visibility:hidden;
+ }
+ body #special input{
+ height:20px;
+ width:95px;
+ 
+ }
+ h1{
+     Text-align:center;
+ }
+ body form input{
+     height:20px;
+     Border-width:2px;
+     margin-top:50px; 
+     margin-left:5px;
+     border:none;
+     text-align:center;
+ }
+ #log{
+     width:95px;
+ }
+ #log1{
+     width:95px;
+ }
+ #sub{
+     width:95px;
+     border:2px solid #000000;
+ }
+ footer a{
+     color:#0000FF;
+     Text-align:center;
+ }
+ footer img{
+     height:40px;
+     width:40px;
+     border-radius:25px;
+ }
+ footer{
+    position:relative;
+    bottom:-250px;
+    left:-8px;
+    color:#8A2BE2;
+ 
+ }
+ input{
+     border-radius:10px;
+ }
+ .page{
+     text-align: center;
+ }
+ .first{
+     color: beige;
+ }
